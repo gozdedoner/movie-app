@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.App {
+    margin: 0;
+    padding-bottom: 129px;
+    box-sizing: border-box;
+    list-style-type: none;
+    width: 100%;
+    height: 100%;
+    background-color: #363636;
+    color: #ffffff;
+}
