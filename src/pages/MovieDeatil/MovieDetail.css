@@ -1,265 +1,316 @@
-
 .movie-detail {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    max-width: 1000px;
-    margin: 0 auto;
-    background-color: #000000;
-    border-radius: 10px;
-    overflow: hidden;
-    padding: 60px 20px;
-    color: #dedede;
-    font-family: "Roboto", sans-serif;
-    position: relative;
-    z-index: 1;
-    
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #000000;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 60px 20px;
+  color: #dedede;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  z-index: 1;
 }
 
 .movie-detail .backdrop {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-    filter: blur(3px) opacity(.2);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter: blur(3px) opacity(0.2);
 }
 
 .movie-detail header {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
 }
 
 .movie-detail header p {
-    font-size: 32px;
-    font-weight: 700;
-    width: 70%;
+  font-size: 32px;
+  font-weight: 700;
+  width: 70%;
 }
 
 .add-favorite-remove .btn {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 .add-favorite-remove .btn span:first-child {
-    display: flex;
+  display: flex;
 }
 
 .add-favorite-remove .add span:first-child svg {
-    color: #ffcc00;
-    transition: all 0.5s;
+  color: #ffcc00;
+  transition: all 0.5s;
 }
 .add-favorite-remove .remove span:first-child svg {
-    color: #ff0000;
-    transition: all 0.5s;
+  color: #ff0000;
+  transition: all 0.5s;
 }
 
 .add-favorite-remove .btn:hover span:first-child svg {
-    color: #000000;
+  color: #000000;
 }
 
 .add-favorite-remove .btn span:last-child {
-    color: #ffffff;
-    transition: all .5s;
-    font-size: 16px;
+  color: #ffffff;
+  transition: all 0.5s;
+  font-size: 16px;
 }
 
 .add-favorite-remove .btn:hover span:last-child {
-    color: #000000;
+  color: #000000;
 }
 
 .btn {
-    background-color: transparent;
-    border: none;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 14px;
-    margin: 0 2px;
-    cursor: pointer;
-    border-radius: 7px;
-    transition: all 0.3s;
-    outline: none;
+  background-color: transparent;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 0 2px;
+  cursor: pointer;
+  border-radius: 7px;
+  transition: all 0.3s;
+  outline: none;
 }
 
 .add {
-    box-shadow: 0 0 0 1px #ffcc00;
+  box-shadow: 0 0 0 1px #ffcc00;
 }
 .add:hover {
-    background-color: #ffcc00;
-    color: #000000;
+  background-color: #ffcc00;
+  color: #000000;
 }
 
 .remove {
-    box-shadow: 0 0 0 1px #c20000;
+  box-shadow: 0 0 0 1px #c20000;
 }
 
 .remove:hover {
-    background-color: #c20000;
-    color: #000000;
+  background-color: #c20000;
+  color: #000000;
 }
 
 .movie-detail .movie-rating {
-    display: flex;
-    font-size: 20px;
+  display: flex;
+  font-size: 20px;
 }
 
 .movie-detail .movie-rating svg {
-    color: #ffcc00;
-    padding-right: 5px;
+  color: #ffcc00;
+  padding-right: 5px;
 }
 
 .movie-detail .movie-rating p {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .movie-detail .content {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
 
 .movie-detail .content .left {
-    width: 40%;
-    display: flex;
-    justify-content: center;
+  width: 40%;
+  display: flex;
+  justify-content: center;
 }
 
 .movie-detail .content .right {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    padding: 10px 30px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 10px 30px;
 }
 
-.right .movie-info .movie-genres, .movie-languages ul {
-    font-size: 20px;
-    display: flex;
-    align-items: center;
+.right .movie-info .movie-genres,
+.movie-languages ul {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
 }
 
 .right .release-date p {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .right .movie-rating p {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .movie-detail .content .right .release-date {
-    display: flex;
+  display: flex;
 }
 
 .movie-detail .content .right .movie-overview p {
-    font-size: 18px;
-    border-radius: 5px;
-    text-align: justify;
-    line-height: 22px;
-    letter-spacing: 1px
+  font-size: 18px;
+  border-radius: 5px;
+  text-align: justify;
+  line-height: 22px;
+  letter-spacing: 1px;
 }
 
 .movie-detail .content .left .movie-poster_path {
-    width: 300px;
-    height: 450px;
+  width: 300px;
+  height: 450px;
 }
 
 .movie-detail .content .left .movie-poster_path img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
 }
 
 .movie-detail .movie-genres {
-    display: flex;
+  display: flex;
 }
 
 .movie-detail span {
-    padding-right: 5px;
-    color: #ffcc00;
-    font-weight: 700;
-    font-size: 20px;
+  padding-right: 5px;
+  color: #ffcc00;
+  font-weight: 700;
+  font-size: 20px;
 }
 
 .movie-detail .movie-genres ul {
-    display: flex;
-    list-style: none;
+  display: flex;
+  list-style: none;
 }
 
 .movie-detail .movie-genres ul li::after {
-    content: ',';
-    padding: 0 1rem 0 0;
+  content: ",";
+  padding: 0 1rem 0 0;
 }
 
 .movie-detail .movie-genres ul li:last-child::after {
-    content: "";
+  content: "";
 }
 .movie-detail .movie-languages ul {
-    list-style: none;
-
+  list-style: none;
 }
 
 .movie-detail .movie-languages ul li::after {
-    content: ',';
-    padding: 0 1rem 0 0;
-    
+  content: ",";
+  padding: 0 1rem 0 0;
 }
 
 .movie-detail .movie-languages ul li:last-child:after {
-    content: "";
-    
+  content: "";
 }
 
 .movie-detail .movie-info {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .movie-detail .movie-info .movie-languages {
-    display: flex;
-    
+  display: flex;
 }
 
 .add-favorite-remove button {
-    background-color: transparent;
-    border: none;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 14px;
-    margin: 0 2px;
-    cursor: pointer;
-    border-radius: 7px;
-    transition: all .3s;
-    outline: none;
-    color: #dedede;
-
+  background-color: transparent;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 0 2px;
+  cursor: pointer;
+  border-radius: 7px;
+  transition: all 0.3s;
+  outline: none;
+  color: #dedede;
 }
 
-
-
 .add-favorite-remove .add-btn {
-    box-shadow: 0 0 0 1px #fc0;
-
+  box-shadow: 0 0 0 1px #fc0;
 }
 
 .add-favorite-remove .add-btn:hover {
-    background-color: #fc0;
-    color: black;
+  background-color: #fc0;
+  color: black;
 }
 
 .add-favorite-remove .remove-btn {
-    box-shadow: 0 0 0 1px #c20000;
-
+  box-shadow: 0 0 0 1px #c20000;
 }
 
 .add-favorite-remove .remove-btn:hover {
-    background-color: #c20000;
-    color: #000000;
+  background-color: #c20000;
+  color: #000000;
+}
+
+@media (max-width: 768px) {
+  .movie-detail {
+    padding: 30px 15px;
+  }
+
+  .movie-detail header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .movie-detail header p {
+    width: 100%;
+    font-size: 24px;
+  }
+
+  .movie-detail .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .movie-detail .content .left {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .movie-detail .content .left .movie-poster_path {
+    width: 90%;
+    height: auto;
+  }
+
+  .movie-detail .content .right {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .right .movie-info .movie-genres,
+  .movie-languages ul,
+  .right .release-date p,
+  .right .movie-rating p {
+    font-size: 16px;
+    flex-wrap: wrap;
+  }
+
+  .movie-detail .movie-info .movie-overview p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .add-favorite-remove {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .add-favorite-remove .btn {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
 }
