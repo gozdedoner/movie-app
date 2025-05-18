@@ -4,7 +4,8 @@ import './App.css'
 import Navbar from './components/Navbar/Navbar'
 import Home from './pages/Home/Home'
 import MyList from './pages/MyList/MyList'
-import MovieDetail from './pages/MovieDeatil/MovieDetail'
+import MovieDetail from './pages/MovieDetail/MovieDetail'
+
 
 
 import { HOME, MY_LIST, MOVIE_DETAIL} from './constants/path'

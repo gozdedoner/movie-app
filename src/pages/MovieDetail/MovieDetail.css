@@ -1,6 +1,7 @@
 .movie-detail {
   display: flex;
   flex-direction: column;
+  border: 5px solid red;
   height: 100%;
   max-width: 1000px;
   margin: 0 auto;
@@ -134,11 +135,24 @@
   padding: 10px 30px;
 }
 
-.right .movie-info .movie-genres,
+/*.right .movie-info .movie-genres,
 .movie-languages ul {
   font-size: 20px;
   display: flex;
   align-items: center;
+} */
+
+.right .movie-info .movie-genres {
+  font-size: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.movie-languages ul {
+  font-size: 20px;
+  display: block;
+  padding-left: 15px;
 }
 
 .right .release-date p {
@@ -255,122 +269,45 @@
 }
 
 @media (max-width: 768px) {
-  .movie-detail {
-    padding: 30px 15px;
-  }
-
-  .movie-detail header {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .movie-detail header p {
-    width: 100%;
-    font-size: 24px;
-  }
-
-  .movie-detail .content {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .movie-detail .content .left {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-
-  .movie-detail .content .left .movie-poster_path {
-    width: 90%;
-    height: auto;
-  }
-
-  .movie-detail .content .right {
-    width: 100%;
-    padding: 10px;
-  }
-
-  .right .movie-info .movie-genres,
-  .movie-languages ul,
-  .right .release-date p,
-  .right .movie-rating p {
-    font-size: 16px;
-    flex-wrap: wrap;
-  }
-
-  .movie-detail .movie-info .movie-overview p {
-    font-size: 16px;
-    line-height: 1.6;
-  }
-
-  .add-favorite-remove {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-  }
-
-  .add-favorite-remove .btn {
-    padding: 8px 12px;
-    font-size: 13px;
-  }
-
   .movie-detail .movie-info {
-    flex-direction: column;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
     gap: 12px;
+    width: 100%;
   }
 
   .movie-detail .movie-genres,
   .movie-detail .movie-languages {
-    flex-direction: column;
-    align-items: flex-start;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    width: 100% !important;
+  }
+
+  .movie-detail .movie-genres span,
+  .movie-detail .movie-languages span {
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    color: #facc15;
+    margin-bottom: 4px;
   }
 
   .movie-detail .movie-genres ul,
   .movie-detail .movie-languages ul {
+    display: flex !important;
     flex-wrap: wrap;
     padding-left: 15px;
+    margin: 0;
+    width: 100%;
   }
 
   .movie-detail .movie-genres li,
   .movie-detail .movie-languages li {
     font-size: 14px;
-    margin-bottom: 3px;
     color: #dedede;
+    margin-right: 8px;
+    margin-bottom: 4px;
   }
-  @media (max-width: 768px) {
-    /* ... mevcut responsive kodların ... */
-  
-    /* Aşağıdaki kısmı en sona EKLE */
-    .movie-detail .movie-info {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 12px;
-      margin-top: 15px;
-    }
-  
-    .movie-detail .movie-genres,
-    .movie-detail .movie-languages {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    .movie-detail .movie-genres ul,
-    .movie-detail .movie-languages ul {
-      padding-left: 15px;
-      display: flex;
-      flex-wrap: wrap;
-    }
-  
-    .movie-detail .movie-genres li,
-    .movie-detail .movie-languages li {
-      font-size: 14px;
-      color: #dedede;
-      margin-bottom: 4px;
-    }
-  }
-  
-
 }
