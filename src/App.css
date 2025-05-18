@@ -13,42 +13,27 @@
 
 
 @media (max-width: 768px) {
-    .to-do-list {
-      margin-top: 50px;
-      padding: 0 15px;
+    .movie-list {
+      display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
     }
   
-    h1 {
-      font-size: 2.5rem;
+    .movie-card {
+      width: 90%;
+      margin: 10px auto;
     }
   
-    input[type="text"] {
+    .movie-card img {
       width: 100%;
-      font-size: 1.3rem;
-      margin-bottom: 15px;
+      height: auto;
+      border-radius: 10px;
     }
   
-    button {
-      width: 100%;
-      margin-bottom: 10px;
-      font-size: 1.4rem;
-    }
-  
-    li {
-      flex-direction: column;
-      align-items: flex-start;
-      font-size: 1.5rem;
-      padding: 10px;
-    }
-  
-    .delete-button,
-    .move-button {
-      width: 100%;
-      margin: 5px 0 0 0;
-    }
-  
-    .text {
-      margin-bottom: 10px;
+    .movie-title {
+      font-size: 1.2rem;
+      text-align: center;
     }
   }
   
