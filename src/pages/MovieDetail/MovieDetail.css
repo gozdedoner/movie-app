@@ -1,7 +1,6 @@
 .movie-detail {
   display: flex;
   flex-direction: column;
-  border: 5px solid red;
   height: 100%;
   max-width: 1000px;
   margin: 0 auto;
@@ -270,19 +269,19 @@
 
 @media (max-width: 768px) {
   .movie-detail .movie-info {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: flex-start !important;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     gap: 12px;
     width: 100%;
   }
 
   .movie-detail .movie-genres,
   .movie-detail .movie-languages {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: flex-start !important;
-    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
   }
 
   .movie-detail .movie-genres span,
@@ -296,8 +295,7 @@
 
   .movie-detail .movie-genres ul,
   .movie-detail .movie-languages ul {
-    display: flex !important;
-    flex-wrap: wrap;
+    display: block; /* satır satır gelsin */
     padding-left: 15px;
     margin: 0;
     width: 100%;
@@ -305,6 +303,7 @@
 
   .movie-detail .movie-genres li,
   .movie-detail .movie-languages li {
+    display: inline-block;
     font-size: 14px;
     color: #dedede;
     margin-right: 8px;
