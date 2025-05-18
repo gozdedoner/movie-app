@@ -337,5 +337,40 @@
     margin-bottom: 3px;
     color: #dedede;
   }
+  @media (max-width: 768px) {
+    /* ... mevcut responsive kodların ... */
+  
+    /* Aşağıdaki kısmı en sona EKLE */
+    .movie-detail .movie-info {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 12px;
+      margin-top: 15px;
+    }
+  
+    .movie-detail .movie-genres,
+    .movie-detail .movie-languages {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .movie-detail .movie-genres ul,
+    .movie-detail .movie-languages ul {
+      padding-left: 15px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    .movie-detail .movie-genres li,
+    .movie-detail .movie-languages li {
+      font-size: 14px;
+      color: #dedede;
+      margin-bottom: 4px;
+    }
+  }
+  
 
 }
