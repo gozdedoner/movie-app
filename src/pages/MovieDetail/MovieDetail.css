@@ -275,6 +275,13 @@
     gap: 12px;
     width: 100%;
   }
+    .movie-overview p {
+    text-align: left;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: 1.6;
+    font-size: 14px;
+  }
 
   .movie-detail .movie-genres,
   .movie-detail .movie-languages {
