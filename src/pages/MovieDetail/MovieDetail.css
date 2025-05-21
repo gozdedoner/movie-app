@@ -268,19 +268,20 @@
 }
 
 @media (max-width: 768px) {
+  .movie-detail .content .right .movie-overview p {
+    text-align: left;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: 1.6;
+    font-size: 14px;
+  }
+
   .movie-detail .movie-info {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 12px;
     width: 100%;
-  }
-    .movie-overview p {
-    text-align: left;
-    letter-spacing: normal;
-    word-spacing: normal;
-    line-height: 1.6;
-    font-size: 14px;
   }
 
   .movie-detail .movie-genres,
@@ -302,7 +303,7 @@
 
   .movie-detail .movie-genres ul,
   .movie-detail .movie-languages ul {
-    display: block; /* satır satır gelsin */
+    display: block;
     padding-left: 15px;
     margin: 0;
     width: 100%;
